@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>images</title>
+	</head>
+	<body>
+		<!-- images -->
+		<!-- <img src="url" alt="alternatetext for screen readers"> -->
+		<img src="images/coding.jpg" alt="Coding on a laptop" width="100%" />
+
+		<img src="small.jpg" srcset="medium.jpg 1000w, large.jpg 2000w" alt="yah" />
+
+		<picture>
+			<source media="print" srcset="landscape_print.jpg" />
+
+			<source
+				media="(max-width: 480px)"
+				srcset="images/test_landscape_1@1x.jpg"
+			/>
+
+			<source
+				media="(max-width: 640px)"
+				srcset="images/test_landscape_1@2x.jpg"
+			/>
+
+			<source
+				media="(max-width: 1024px)"
+				srcset="images/test_landscape_1@4x.jpg"
+			/>
+
+			<img
+				src="landscape_large.jpg"
+				alt="Nymphenburg Castle in Munich during sunset"
+			/>
+		</picture>
+	</body>
+</html>
